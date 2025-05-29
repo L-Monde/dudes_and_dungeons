@@ -237,10 +237,14 @@ $(document).ready(function () {
     } else {
       let newHero = { x: hero.x, y: hero.y };
       switch (e.key.toLowerCase()) {
-        case 'w': newHero.y--; break;
+        case 'w' : newHero.y--; break;
         case 's': newHero.y++; break;
         case 'a': newHero.x--; break;
         case 'd': newHero.x++; break;
+        case 'ц' : newHero.y--; break;
+        case 'ы': newHero.y++; break;
+        case 'ф': newHero.x--; break;
+        case 'в': newHero.x++; break;
         default:
           isMoving = false;
           return;
